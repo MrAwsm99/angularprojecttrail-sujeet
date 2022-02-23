@@ -1,0 +1,9 @@
+img {
+    height: 40%;
+    width: 40%;    
+}
+.header{
+    background-color: #AD4379;
+    justify-content: center;
+    padding: 50px 0
+}
