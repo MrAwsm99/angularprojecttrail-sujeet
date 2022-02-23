@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-first-app';
   imgUrl = ".././assets/images/p1.jpg";
+  
   fname="";
 
   count = 0;
