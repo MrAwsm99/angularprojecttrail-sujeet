@@ -9,6 +9,8 @@ import { MycompComponent } from './mycomp/mycomp.component';
 import { CoffeeheaderComponent } from './coffeeheader/coffeeheader.component';
 import { CoffeecarouselComponent } from './coffeecarousel/coffeecarousel.component';
 import { CoffeefooterComponent } from './coffeefooter/coffeefooter.component';
+import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CoffeefooterComponent } from './coffeefooter/coffeefooter.component';
     MycompComponent,
     CoffeeheaderComponent,
     CoffeecarouselComponent,
-    CoffeefooterComponent
+    CoffeefooterComponent,
+    TwowaydatabindingComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

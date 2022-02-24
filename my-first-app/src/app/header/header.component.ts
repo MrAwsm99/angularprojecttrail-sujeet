@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,4 +12,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() itemrecieved:any;
+
+  counters = ["0"];
+  cou = 0;
+  incrementcounter(newItem:string){
+    this.cou++;
+    this.counters.push(newItem);
+
+  }
 }

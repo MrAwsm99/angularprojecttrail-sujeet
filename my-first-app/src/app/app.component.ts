@@ -16,5 +16,20 @@ export class AppComponent {
     this.fname = "James";
     return this.count++;
   }
+  gnumber=0;
+  evenodd(){
+    return this.gnumber%2==0;
+  }
 
+  numbArrays=[10,20,30,40]
+  strArrays=["John","Bruce","Tony"]
+
+  strLengths=["Bruce","Gotham","Avenger","Scarlet","Jonathan"]
+
+  itemsent=["mobile","Laptop"];
+
+  cart=0;
+  addcart(){
+    return this.cart++;
+  }
 }
