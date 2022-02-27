@@ -1,0 +1,28 @@
+<p>product works!</p>
+
+<div class="container">
+    <h1>List of Product</h1>
+    <!-- <ul class="pro">
+    <li *ngFor="let p of products" [attr.id]="p.id">
+        Id: {{p.id}}<br>
+        Name: {{p.name}}<br>
+        Price: {{p.price}}<br>
+        Quantity: {{p.quantity}}<br>
+    
+    <button (click)="addItem(p)" class="btn btn-danger">Add to cart</button>
+    
+</li>
+</ul> -->
+<div class="cart">
+    <div *ngFor="let p of products">
+        Id: {{p.id}}<br>
+        Name: {{p.name}}<br>
+        Price: {{p.price}}<br>
+        Quantity: {{p.quantity}}<br>
+    
+    <button (click)="addItem(p)" class="btn btn-danger">Add to cart</button>
+
+    </div>
+    
+</div>
+</div>

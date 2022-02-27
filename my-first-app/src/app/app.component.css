@@ -1,0 +1,14 @@
+.red{
+    color: red;
+}
+
+.yellow{
+    color: yellow;
+}
+
+table, th, td{
+    border: 1px solid black;
+}
+.cart{
+    display: flex;
+}

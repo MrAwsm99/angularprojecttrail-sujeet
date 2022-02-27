@@ -48,5 +48,70 @@
 
   <!-- <app-header [itemrecieved]="itemsent"></app-header> -->
 
-  <app-header></app-header>
-  <app-mycomp></app-mycomp>
+  <!-- <app-header></app-header>
+  <app-mycomp></app-mycomp> -->
+
+  <!-- <div class="container">
+    <p [ngClass]="item>10?'red':'yellow'">{{item}}</p>
+    <p [ngClass]="classfeature()">{{item}}</p>
+
+    <h2>print even in red and odd in yellow</h2>
+    <ul *ngFor="let newArray of newArrays">
+      <li [ngClass]="newArray%2==0?'red':'yellow'">{{newArray}}</li>
+
+    </ul>
+
+    <button class="btn btn-primary" (click)="enable()">click here</button>
+    <button class="btn btn-primary" (click)="disable()">remove</button>
+    <p *ngIf="flag">Hello</p>
+  </div>
+
+  <div class="container">
+    <button [ngStyle]="{background:'yellow'}">Click Here</button>
+  </div>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>username</th>
+      <th>email</th>
+      <th>address</th>
+      <th>phone</th>
+      <th>websites</th>
+      <th>company</th>
+      <th>action</th>
+    </tr>
+    <tr *ngFor="let d of data" [attr.id]="d.id">
+    <td [ngClass]="item>10?'red':'yellow'">{{d.id}}]}</td>
+    <td>{{d.name}}</td>
+    <td>{{d.username}}</td>
+    <td>{{d.email}}</td>
+    <td>{{d.address.street}},
+        {{d.address.suite}},
+        {{d.address.city}},
+        {{d.address.zipcode}},
+        Geolocation({{d.address.geo.lat}},{{d.address.geo.lng}})
+    </td>
+    <td>{{d.phone}}</td>
+    <td>{{d.website}}</td>
+    <td>{{d.company.name}},{{d.company.catchPhrase}},{{d.company.bs}}</td>
+    <td><button (click)="removeItem()" class="btn btn-danger">Remove</button></td>
+  </tr>
+  </table>  -->
+  
+  <div class="cart">
+    <div>
+  <app-product (newItemEvent)="addDetails($event)"></app-product>
+</div>
+  <div class="container" id="cart">
+    <h1>List of Items in Cart</h1>
+    <ul>
+      <li class="cart-items" *ngFor="let detail of itemsInCart">
+        Name : {{detail.name}}<br>
+        Price : {{detail.price}}<br>
+        Quantity : {{detail.quantity}}<br>
+      </li>
+    </ul>
+  </div>
+
+  </div>

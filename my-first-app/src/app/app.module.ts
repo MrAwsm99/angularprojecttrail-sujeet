@@ -11,6 +11,7 @@ import { CoffeecarouselComponent } from './coffeecarousel/coffeecarousel.compone
 import { CoffeefooterComponent } from './coffeefooter/coffeefooter.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
 import { CartComponent } from './cart/cart.component';
+import { ProductComponent } from './product/product.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CartComponent } from './cart/cart.component';
     CoffeecarouselComponent,
     CoffeefooterComponent,
     TwowaydatabindingComponent,
-    CartComponent
+    CartComponent,
+    ProductComponent
   ],
   imports: [
     BrowserModule,
