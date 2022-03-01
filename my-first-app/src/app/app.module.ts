@@ -12,6 +12,8 @@ import { CoffeefooterComponent } from './coffeefooter/coffeefooter.component';
 import { TwowaydatabindingComponent } from './twowaydatabinding/twowaydatabinding.component';
 import { CartComponent } from './cart/cart.component';
 import { ProductComponent } from './product/product.component';
+import { DatetimeService } from './datetime.service'
+import { UserinformationService } from './userinformation.service'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { ProductComponent } from './product/product.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [DatetimeService, UserinformationService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

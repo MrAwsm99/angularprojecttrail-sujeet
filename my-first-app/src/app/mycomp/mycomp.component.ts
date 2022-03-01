@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { UserinformationService } from '../userinformation.service';
+import { DatetimeService } from './../datetime.service' 
 
 @Component({
   selector: 'app-mycomp',
@@ -7,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MycompComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dt:DatetimeService, public co:UserinformationService, public form:UserinformationService) { }
+  getdate=this.dt.today;
 
+  
   ngOnInit(): void {
   }
-
+  @Input() recived:any;
 }

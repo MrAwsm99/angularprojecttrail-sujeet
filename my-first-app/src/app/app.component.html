@@ -99,7 +99,7 @@
   </tr>
   </table>  -->
   
-  <div class="cart">
+  <!-- <div class="cart">
     <div>
   <app-product (newItemEvent)="addDetails($event)"></app-product>
 </div>
@@ -114,4 +114,73 @@
     </ul>
   </div>
 
+  </div> -->
+
+  <h2>Using Services</h2>
+  <table>
+    <tr>
+      <th>id</th>
+      <th>name</th>
+      <th>username</th>
+      <th>email</th>
+      <th>address</th>
+      <th>phone</th>
+      <th>websites</th>
+      <th>company</th>
+      <th>action</th>
+    </tr>
+    <tr *ngFor="let user of userinfo">
+    <td>{{user.name}}</td>
+    <td>{{user.username}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.address.street}},
+        {{user.address.suite}},
+        {{user.address.city}},
+        {{user.address.zipcode}},
+        Geolocation({{user.address.geo.lat}},{{user.address.geo.lng}})
+    </td>
+    <td>{{user.phone}}</td>
+    <td>{{user.website}}</td>
+    <td>{{user.company.name}},{{user.company.catchPhrase}},{{user.company.bs}}</td>
+    <!-- <td><button (click)="removeItem()" class="btn btn-danger">Remove</button></td> -->
+  </tr>
+  </table>
+  <p>{{getdate}}</p>
+
+  <!-- <div class="container">
+  <input type="text" #parent (keyup)="send(parent.value)" >
+  </div> -->
+
+  <!-- <app-mycomp></app-mycomp> -->
+
+  <!-- <h2>ngForm</h2>
+  <div class="container">
+    <form #myform="ngForm" (ngSubmit)="onSubmitofform(myform.value)">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" name="email" placeholder="email" [ngModel]="user.email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" placeholder="password" [ngModel]="user.password">
+      </div>
+      <button type="submit" class="btn btn-primary" >Submit</button>
+    </form> 
+
   </div>
+  <app-mycomp></app-mycomp> -->
+
+  <h2>Table</h2>
+  <label>Enter The Number</label>
+<input type="number" #table (keyup)="cal(table.value)">
+<p *ngFor="let a of arr">{{a}}</p>
+<br>
+<br>
+
+
+<div class="hotel">
+  <label for="from">from</label>
+  <input type="date" id="from" #from>
+  <label for="to">to</label>
+  <input type="date" id="to" #to> 
+  <button (click)="cost(from.value,to.value)">calculate</button>
